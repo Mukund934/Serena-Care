@@ -144,12 +144,15 @@ Project runs at [http://localhost:3000](http://localhost:3000)
 🎥 The following preview videos demonstrate layout, responsiveness, services, and contact form flow is uploaded in the google drive
 
 *  → [Watch Video Previews here](https://drive.google.com/drive/folders/1TYIMbuH7xn1DULoEdOm0Mvtv8eeZ1Sln?usp=sharing)
-
-
-📁 These videos are also included in the GitHub repo as:
-
+*  containing:
 * VideoPreview1.mp4
 * VideoPreview2.mp4
+* VideoPreview(Mobile_preview)
+
+
+📁 These videos are also included(except the mobile's preview, check that in the drive) in the GitHub repo as:
+
+
 
 ---
 
