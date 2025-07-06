@@ -1,5 +1,5 @@
 
-# 💠 SerenaCare – A Safe Space for Emotional & Spiritual Renewal
+# 💠 Serena Care – A Safe Space for Emotional & Spiritual Renewal
 
 🧠 Empowering mental wellness through faith-centered therapy and compassionate care.
 
@@ -7,7 +7,7 @@
 
 ## 📖 Overview
 
-🌿 SerenaCare is a modern, mobile-responsive therapist website designed for Dr. Serena Blake, a licensed clinical psychologist based in Los Angeles. The platform offers a warm, professional digital presence where clients can explore services, learn about the therapist, and seamlessly get in touch for support.
+🌿 Serena Care is a modern, mobile-responsive therapist website designed for Dr. Serena Blake, a licensed clinical psychologist based in Los Angeles. The platform offers a warm, professional digital presence where clients can explore services, learn about the therapist, and seamlessly get in touch for support.
 
 Built using Next.js 14 and Tailwind CSS, SerenaCare mirrors industry-quality reference designs from real-world therapists. It prioritizes clean UX, accessible layout, and calming aesthetics — all designed to build trust with visitors seeking mental health support.
 
