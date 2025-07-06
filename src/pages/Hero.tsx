@@ -1,11 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useAnimation } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
+  const [years, setYears] = useState(0);
+  const [sessions, setSessions] = useState(0);
 
   const texts = [
     'Greater Peace in Your Heart',
@@ -26,6 +28,26 @@ const Hero = () => {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // 👇 Animate the counters on mount
+  useEffect(() => {
+    const animateValue = (start: number, end: number, duration: number, setter: (val: number) => void) => {
+      const range = end - start;
+      let startTime: number | null = null;
+
+      const step = (timestamp: number) => {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+        setter(Math.floor(progress * range + start));
+        if (progress < 1) requestAnimationFrame(step);
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    animateValue(0, 40, 2000, setYears);        // 2s for years
+    animateValue(0, 45000, 2500, setSessions);  // 2.5s for sessions
+  }, []);
 
   return (
     <>
@@ -108,14 +130,18 @@ const Hero = () => {
       <section className="bg-[#355c5f] text-white py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left">
           <div>
-            <h3 className="text-3xl font-bold mb-2">40+</h3>
+            <h3 className="text-3xl font-bold mb-2">
+              {years}+{/* Animated from 0 to 40 */}
+            </h3>
             <p className="text-lg font-semibold">Years Experience</p>
             <p className="text-sm mt-1">
               Providing compassionate and effective Individual and Couples Therapy
             </p>
           </div>
           <div>
-            <h3 className="text-3xl font-bold mb-2">45,000+</h3>
+            <h3 className="text-3xl font-bold mb-2">
+              {sessions.toLocaleString()}+{/* Animated from 0 to 45,000 */}
+            </h3>
             <p className="text-lg font-semibold">Individual Client Sessions</p>
             <p className="text-sm mt-1">
               Helping individuals and couples heal, grow, and find purpose
