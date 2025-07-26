@@ -64,7 +64,7 @@ Built using Next.js 14 and Tailwind CSS, SerenaCare mirrors industry-quality ref
 
 ## 🚀 Live Website
 
-🌐 Visit: [https://serena-care-git-main-mukund-thakurs-projects.vercel.app/](https://serena-care.vercel.app/)
+🌐 Visit: [Link](https://serena-care.vercel.app/)
 
 Hosted seamlessly on Vercel.
 
